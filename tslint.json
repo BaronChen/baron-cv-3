@@ -5,12 +5,16 @@
     "jsRules": {},
     "rules": {
       "interface-name": false,
-      "semicolon": [true, "never"],
+      "semicolon": [false],
       "member-access": [false],
-      "ordered-imports": [true],
+      "ordered-imports": [false],
       "no-console": [false],
       "no-var-requires": true,
-      "quotemark": [true, "double", "jsx-double"]
+      "quotemark": [false],
+      "no-empty-interface" : false,
+      "no-submodule-imports": false,
+      "object-literal-sort-keys": false,
+      "prefer-object-spread": false
     },
     "rulesDirectory": []
   }

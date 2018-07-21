@@ -1,20 +1,11 @@
-import * as React from "react"
+import * as React from "react";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
 const MainLayout: React.SFC = ({ children }) => (
-  <div
-    style={{
-      margin: `0 auto`,
-      marginBottom: rhythm(1.5),
-      marginTop: rhythm(1.5),
-      maxWidth: 650,
-      paddingLeft: rhythm(3 / 4),
-      paddingRight: rhythm(3 / 4),
-    }}
-  >
+  <div>
     {children}
   </div>
-)
+);
 
-export default MainLayout
+export default MainLayout;

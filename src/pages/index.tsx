@@ -38,7 +38,7 @@ export const pageQuery = graphql`
 
 export class IndexPage extends React.Component<IndexPageProps & {dispatch: Dispatch}, {}> {
 
-  public componentDidMount() {
+  public componentWillMount() {
     const { name, title} = this.props.data.enJson;
     this.props.dispatch(setBasicInfo(name, title));
   }

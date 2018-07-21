@@ -14,6 +14,10 @@ interface IndexPageProps {
       siteMetadata: {
         siteName: string
       }
+    },
+    enJson: {
+      name: string,
+      title: string
     }
   }
 }
@@ -25,13 +29,18 @@ export const pageQuery = graphql`
         siteName
       }
     }
+    enJson {
+      name
+      title
+    }
   }
 `;
 
 export class IndexPage extends React.Component<IndexPageProps & {dispatch: Dispatch}, {}> {
 
   public componentDidMount() {
-    this.props.dispatch(setBasicInfo("aaaa", "bbbbb"));
+    const { name, title} = this.props.data.enJson;
+    this.props.dispatch(setBasicInfo(name, title));
   }
 
   public render() {

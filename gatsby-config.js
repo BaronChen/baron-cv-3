@@ -20,5 +20,13 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Material Icons`
+        ]
+      }
+    }
   ],
 }

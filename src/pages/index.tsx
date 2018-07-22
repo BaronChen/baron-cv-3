@@ -47,7 +47,6 @@ export class IndexPage extends React.Component<IndexPageProps & {dispatch: Dispa
     const { siteName } = this.props.data.site.siteMetadata;
     return (
       <Layout>
-        <h1>{siteName} Typescript world!</h1>
         <Introduction />
       </Layout>
     );

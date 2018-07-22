@@ -2,6 +2,7 @@ import * as React from "react";
 import { connect } from 'react-redux';
 import { IRootState } from '../../store/reducer';
 import { getName, getTitle } from './reducer';
+import Header from './components/header';
 
 export interface IIntroductionProps {
 	name: string,
@@ -12,10 +13,7 @@ export class Introduction extends React.Component<IIntroductionProps> {
 	public render() {
 		const { name, title } = this.props;
 		return (
-
-			<p>
-				{name} <strong>{title}</strong>
-			</p>
+			<Header name={name} title={title} />
 		);
 	}
 }

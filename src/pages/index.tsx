@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 import Layout from "../layouts";
 import * as React from "react";
 import Introduction from '../components/introduction/introduction';
+import MyTerminal from '../components/terminal/terminal';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { setBasicInfo } from '../components/introduction/actions/introduction.actions';
@@ -48,6 +49,7 @@ export class IndexPage extends React.Component<IndexPageProps & {dispatch: Dispa
     return (
       <Layout>
         <Introduction />
+        <MyTerminal />
       </Layout>
     );
   }

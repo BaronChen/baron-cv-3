@@ -25,6 +25,7 @@
     "rxjs": "^6.2.2",
     "semantic-ui-css": "^2.3.3",
     "semantic-ui-react": "^0.82.0",
+    "terminal-in-react": "^4.3.0",
     "typography": "^0.16.17",
     "typography-theme-bootstrap": "^0.16.7",
     "typography-theme-elk-glen": "^0.16.9"

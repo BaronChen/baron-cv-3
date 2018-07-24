@@ -3,6 +3,7 @@ import Layout from "../layouts";
 import * as React from "react";
 import Introduction from '../components/introduction/introduction';
 import MyTerminal from '../components/terminal/terminal';
+import MyModal from '../components/modal/modal';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { setBasicInfo } from '../components/introduction/actions/introduction.actions';
@@ -49,7 +50,8 @@ export class IndexPage extends React.Component<IndexPageProps & {dispatch: Dispa
     return (
       <Layout>
         <Introduction />
-        <MyTerminal />
+        <MyTerminal dispatch={this.props.dispatch}/>
+        <MyModal />
       </Layout>
     );
   }
